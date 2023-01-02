@@ -28,7 +28,7 @@ and send valid tokens via discord webhook
 This project must not be used for illegal purposes, and is strictly for educational purposes and for people to experiment with. The user takes full responsibility for their own actions.
 
 # Key Note
-This program is not aimed to evade AV, so with that being said.. find other ways over execution.. much like adding to the ducky payload to turn off the AV OR go about obfuscating the script itself. Do what you feel is best.
+Be aware that this program is not aimed to evade AV, so the script makes an exception to a temp file, then when finished it'll turn remove the exclusion.
 
 # Prerequisite
 When compiling the script, pyinstaller must be used on the windows machine when creating the windows executable (duh)
