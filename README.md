@@ -16,6 +16,7 @@ The user, YOU, are responsible for the usage of such utility. With that said, us
 Input your discord webhook in the payload file (txt file)
 $webhook = 'DISCORD_WEBHOOK'
 ```
+Save token2Discord.txt to flipper, and have fun with your tokens!!!
 
 # Compile (if you want your own)
 • Be sure PyInstaller is installed
