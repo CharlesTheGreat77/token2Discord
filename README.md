@@ -1,4 +1,5 @@
 # token2Discord
+Exfiltrate discord tokens and send them via discord webhook using the flipperzero
 
 # Disclaimer
 This utility is strictly for educational and/or purposes of which an employer has authority to do so.
