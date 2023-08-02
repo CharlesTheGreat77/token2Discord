@@ -6,7 +6,7 @@ The user, YOU, are responsible for the usage of such utility. With that said, us
 
 # Prerequisites
 ```
-1. Python3
+1. Python3 (optional if building your own payload)
 2. Discord Webhook
 ```
 
@@ -25,13 +25,8 @@ $ pip3 install -r requirements.txt
 python3 -m PyInstaller token2Discord.py --onefile
 ```
 * After compiling:
-        - Inside the /dist directory is your exe file
-        
-# Upload
+  - Inside the /dist directory is your exe file
 * Upload exe to a server, local python server, etc... do as you will.
-
-# BADUSB
-* Edit the line "LINK_TO_EXE" in the token2Discord.txt to the link to your newly created exe file.
 
 # Key note
 * this is not made to bypass AV, but rather sets an exclusion at C:\temp, then resets such  
